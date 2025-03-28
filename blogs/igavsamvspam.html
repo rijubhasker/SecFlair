@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Depth Comparison: Identity Governance vs. Access Management vs. Privileged Account Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #34495E;
+            color: white;
+        }
+        td {
+            color: #2C3E50;
+        }
+        tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+    </style>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.jpeg" rel="icon">
+  <link href="../assets/img/apple-touch-icon.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SecFlair Generic
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <!--<h1><a href="index.html">SecFlair</a></h1></a>-->
+        <a href="../index.html"><img src="../assets/img/secflairLogo.png" alt="" class="img-fluid"/>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html#hero"></a></li>
+		  <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#about">About</a></li>
+           <li><a class="nav-link scrollto" href="../index.html#services">Services</a></li>
+           <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="../index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+      <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="../assets/img/hero-img.svg" alt="" class="img-fluid">
+      </div>
+
+      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+        <h2>Blog - IGA VS AM VS PAM.</h2>
+        <div>
+          <a href="../index.html#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="../index.html#services" class="btn-services scrollto">Services</a>
+		  <a href="../training.html#training-details" class="btn-services scrollto">Trainings</a>
+		  <a href="../Blogging.html#blogging-details" class="btn-services scrollto">Blogs</a></br>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+  
+
+    <!-- ======= Blogging Section ======= -->
+    <section class="implementation">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2></h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li>Blogs</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+	
+	<!-- Blogging Section -->
+
+
+<!-- ======= Blogging content section ======= -->
+    <section id="blogging2-details" class="portfolio-details">
+    <div class="blogcontainer">
+		
+    <h1>Detailed Comparison: Identity Governance vs. Access Management vs. Privileged Account Management</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Identity Governance and Administration (IGA)</th>
+                <th>Access Management (AM)</th>
+                <th>Privileged Account Management (PAM)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Definition</strong></td>
+                <td>Identity Governance and Administration (IGA) refers to a comprehensive set of policies, processes, and technologies aimed at managing the lifecycle of identities within an organization. It ensures that the right individuals have the appropriate access to resources based on their roles and responsibilities, while also maintaining compliance with legal and regulatory requirements. IGA is often intertwined with compliance auditing and role-based access control (RBAC).</td>
+                <td>Access Management (AM) involves the implementation of processes and technologies designed to control who can access what resources, when, and how. AM focuses on ensuring the right individuals can securely access resources and services. It includes managing user authentication, authorization, and access enforcement via tools like Single Sign-On (SSO) and Multi-Factor Authentication (MFA).</td>
+                <td>Privileged Account Management (PAM) is a subset of identity management that specifically focuses on securing and controlling privileged accounts, which are accounts with higher levels of access (such as system administrators or root users). PAM tools monitor, manage, and restrict access to these critical accounts, ensuring that only authorized users can perform sensitive operations while mitigating the risks of insider threats or cyberattacks.</td>
+            </tr>
+            <tr>
+                <td><strong>Primary Goal</strong></td>
+                <td>The primary goal of IGA is to ensure identity-related processes are both efficient and secure by enforcing the right access policies throughout the identity lifecycle. This includes onboarding, role-based access assignment, and ensuring compliance across user access permissions.</td>
+                <td>AM's primary goal is to provide secure and seamless access to resources by verifying and authenticating users based on their credentials. It aims to prevent unauthorized access through strong authentication mechanisms and access policies.</td>
+                <td>PAM’s main goal is to protect and audit the use of privileged accounts. By controlling these high-level accounts, PAM ensures that sensitive systems are not compromised and that any use of these accounts is tracked, monitored, and secured to prevent abuse.</td>
+            </tr>
+            <tr>
+                <td><strong>Key Components</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Identity Lifecycle Management:</strong> Automating the processes of user provisioning and de-provisioning, ensuring that when someone leaves or changes roles, their access is immediately adjusted.</li>
+                        <li><strong>Role-Based Access Control (RBAC):</strong> Defining roles within the organization and assigning permissions based on job functions and responsibilities.</li>
+                        <li><strong>Compliance and Auditing:</strong> Tracking access and user activity to ensure compliance with regulations such as GDPR, HIPAA, and SOX.</li>
+                        <li><strong>Self-Service and Access Requests:</strong> Allowing users to request access and manage their own profiles within predefined policies.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>Authentication:</strong> Verifying user identities through passwords, biometrics, or Multi-Factor Authentication (MFA).</li>
+                        <li><strong>Authorization:</strong> Determining if a user has the necessary permissions to access specific resources, often using tools like Access Control Lists (ACLs).</li>
+                        <li><strong>Session Management:</strong> Controlling and monitoring user sessions, enforcing session timeouts, and logging all activity for auditing purposes.</li>
+                        <li><strong>Federation and SSO:</strong> Enabling users to authenticate once and gain access to multiple systems without repeated logins.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>Privileged Account Vaulting:</strong> Storing privileged account credentials securely to prevent unauthorized access.</li>
+                        <li><strong>Access Controls:</strong> Enforcing the principle of least privilege to ensure privileged accounts only have the minimum required access.</li>
+                        <li><strong>Session Recording:</strong> Monitoring and recording privileged account sessions to detect abnormal activities or potential misuse.</li>
+                        <li><strong>Audit Trails:</strong> Generating detailed logs of all privileged access to systems, applications, and data for compliance and forensic investigations.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Use Cases</strong></td>
+                <td>
+                    <ul>
+                        <li>Automating the process of onboarding new employees and granting them the appropriate access to systems.</li>
+                        <li>Ensuring that access is compliant with regulatory frameworks like SOX, HIPAA, or PCI-DSS.</li>
+                        <li>Controlling user permissions and roles across an organization to avoid the risk of over-provisioning and ensure least-privilege access.</li>
+                        <li>Audit and review user access rights regularly to ensure compliance and proper governance.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Granting employees and partners access to applications based on their roles (e.g., HR staff access to payroll systems).</li>
+                        <li>Implementing SSO to streamline user access to multiple cloud services and internal applications.</li>
+                        <li>Enforcing strong authentication methods (like MFA) for accessing sensitive or critical systems.</li>
+                        <li>Enabling user identity federation across different systems and services to simplify access management.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Securing system administrator access to critical infrastructure such as servers, databases, and network devices.</li>
+                        <li>Preventing unauthorized access to sensitive data and critical systems by controlling elevated user privileges.</li>
+                        <li>Monitoring activities of privileged users to detect misuse or breaches, such as using privileged accounts for non-business purposes.</li>
+                        <li>Automating the process of rotating privileged account passwords to ensure they are never exposed for longer than necessary.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Security Risks Addressed</strong></td>
+                <td>
+                    <ul>
+                        <li>Mitigates the risk of inappropriate access by ensuring that only authorized individuals can access sensitive data and applications.</li>
+                        <li>Prevents user identity theft or impersonation by providing strong authentication controls.</li>
+                        <li>Reduces the complexity of managing large-scale access across complex environments, which may increase the risk of human error or mismanagement.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Prevents unauthorized access to sensitive resources by ensuring that only verified individuals can access critical systems.</li>
+                        <li>Minimizes the risk of account compromise via MFA and SSO technologies.</li>
+                        <li>Protects user credentials through strong password policies and centralized authentication systems.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Prevents the misuse of privileged accounts by ensuring that only authorized individuals can access and perform sensitive operations.</li>
+                        <li>Protects against insider threats by monitoring and auditing activities of privileged users in real-time.</li>
+                        <li>Reduces the potential for a security breach from a compromised privileged account.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Example Tools</strong></td>
+                <td>
+                    <ul>
+                        <li>SailPoint</li>
+                        <li>Okta Identity Governance</li>
+                        <li>Microsoft Identity Manager</li>
+                        <li>IBM Security Identity Governance and Intelligence</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Okta</li>
+                        <li>OneLogin</li>
+                        <li>Ping Identity</li>
+                        <li>Auth0</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>CyberArk</li>
+                        <li>BeyondTrust</li>
+                        <li>Thycotic</li>
+                        <li>Varonis</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	
+<p class="blog-author">Written by Ajay Gaur</p>
+    </div>
+	
+    </section><!-- Blogging content section ends -->
+
+  </main><!-- End #main -->
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>SecFlair</h3>
+            <p>All rights reserved. SecFlair consultancy services offeres all kinds of consultancy for Identity and access management security products.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="../index.html#hero">Home</a></li>
+              <li><a href="../index.html#about">About us</a></li>
+              <li><a href="../index.html#services">Services</a></li>
+              <li><a href="../terms-conditions.html#terms">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Going Physical Soon<br>
+              at Sarjah Media City<br>
+              United Arab Emirates <br>
+              <strong>UAE Phone:</strong> +971 589577843<br>
+			  <strong>India Phone:</strong> +91 8796568010<br>
+              <strong>Email:</strong> contact@secflair.com<br>
+            </p>
+<!--
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+-->
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Send and email to gain access to exclusive content, insights, and updates. This could include early access to our posts on IAM security or any offers related to training on IAM softwares.If interested please send an email at contact@secflair.com.</p>
+           <!-- <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+			-->
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>SecFlair</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  
+</body>
+</html>
