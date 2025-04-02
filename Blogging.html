@@ -22,6 +22,70 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #3253a8;
+            color: white;
+        }
+        td {
+            color: #2C3E50;
+        }
+        tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+		@media screen and (max-width: 768px) {
+		  .table-wrapper {
+			overflow-x: auto;
+		  }
+
+		  table {
+			width: 100%;
+			border: 0;
+		  }
+
+		  th,
+		  td {
+			padding: 10px;
+			font-size: 14px;
+		  }
+
+		  td {
+			border: none;
+			border-bottom: 1px solid #ddd;
+		  }
+
+		  td::before {
+			content: attr(data-label);
+			font-weight: bold;
+			display: inline-block;
+			width: 120px;
+			text-align: left;
+		  }
+    </style>
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
