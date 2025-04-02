@@ -5,9 +5,44 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SECFLAIR - Training ForgeRock Basic.</title>
+  <title>SECFLAIR - Training IdentityIQ.</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #3253a8;
+            color: white;
+        }
+        td {
+            color: #2C3E50;
+        }
+        tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+    </style>
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.jpeg" rel="icon">
@@ -90,7 +125,7 @@
       </div>
 
       <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
-        <h2>ForgeRock Essentials: Building Your Foundation</h2>
+        <h2>Forgerock Fundamental - Learn basics</h2>
         <div>
           <a href="../index.html#about" class="btn-get-started scrollto">Get Started</a>
           <a href="../index.html#services" class="btn-services scrollto">Services</a>
@@ -114,7 +149,7 @@
           <ol>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../index.html#services">Services</a></li>
-            <li>Training</li>
+            <li><a href="../training.html#services">Training</a></li>
           </ol>
         </div>
 
@@ -125,49 +160,155 @@
     <section id="forgerockbasic" class="portfolio-details">
 	<div class="table-responsive-vertical shadow-z-1">
   <!-- Table starts here -->
-  <table id="table" class="table table-hover table-mc-light-blue">
+  <table id="table">
       <thead>
         <tr>
-          <th>SNo.</th>
-          <th>Topic</th>
-          <th>Duration</th>
+		    <th>Index</th>
+            <th>Module</th>
+            <th>Topic</th>
+            <th>Hours</th>
+            <th>Description</th>
         </tr>
-      </thead>
-      <tbody>
+	<tbody>
         <tr>
-          <td data-title="ID">1</td>
-          <td data-title="Name">Introduction to ForgeRock Identity Platform</td>
-          <td data-title="Status">15 minutes</td>
-        </tr>
-        <tr>
-            <td data-title="ID">4</td>
-            <td data-title="Name">Authentication and Authorization</td>
-            <td data-title="Status">45 minutes</td>
+			<td>1</td>
+            <td>Introduction</td>
+            <td>Overview of ForgeRock Identity Platform</td>
+            <td>1</td>
+            <td>Understanding ForgeRock components (AM, IDM, DS, IG).</td>
         </tr>
         <tr>
-          <td data-title="ID">2</td>
-          <td data-title="Name">Installation and Configuration</td>
-          <td data-title="Status">2 hours</td>
+			<td>2</td>
+            <td>Introduction</td>
+            <td>ForgeRock Access Management (AM) Basics</td>
+            <td>1</td>
+            <td>Introduction to ForgeRock AM and its role in IAM.</td>
         </tr>
         <tr>
-          <td data-title="ID">3</td>
-          <td data-title="Name">Identity Management Fundamentals</td>
-          <td data-title="Status">2 hours</td>
+			<td>3</td>
+            <td>Introduction</td>
+            <td>ForgeRock Directory Services (DS) Basics</td>
+            <td>1</td>
+            <td>Understanding the directory server and user data storage.</td>
         </tr>
-		<tr>
-          <td data-title="ID">5</td>
-          <td data-title="Name">Identity Federation</td>
-          <td data-title="Status">1 hours</td>
+        <tr>
+			<td>4</td>
+            <td>Introduction</td>
+            <td>ForgeRock Identity Management (IDM) Basics</td>
+            <td>1</td>
+            <td>Overview of user lifecycle management.</td>
         </tr>
-		<tr>
-          <td data-title="ID">6</td>
-          <td data-title="Name">Identity Gateway</td>
-          <td data-title="Status">2 hours</td>
+        <tr>
+			<td>5</td>
+            <td>Introduction</td>
+            <td>ForgeRock Identity Gateway (IG) Basics</td>
+            <td>1</td>
+            <td>Introduction to IG for secure API access.</td>
         </tr>
-		<tr>
-          <td data-title="ID">7</td>
-          <td data-title="Name">Directory Services</td>
-          <td data-title="Status">2 hours</td>
+        <tr>
+			<td>6</td>
+            <td>Installation</td>
+            <td>System Requirements and Pre-installation Setup</td>
+            <td>1</td>
+            <td>Preparing the environment for ForgeRock installation.</td>
+        </tr>
+        <tr>
+			<td>7</td>
+            <td>Installation</td>
+            <td>Installing ForgeRock Access Management (AM)</td>
+            <td>2</td>
+            <td>Step-by-step installation process.</td>
+        </tr>
+        <tr>
+			<td>8</td>
+            <td>Configuration</td>
+            <td>Configuring ForgeRock Directory Services (DS)</td>
+            <td>2</td>
+            <td>Setting up and managing DS.</td>
+        </tr>
+        <tr>
+			<td>9</td>
+            <td>Configuration</td>
+            <td>AM Configuration: Realms and Users</td>
+            <td>2</td>
+            <td>Creating and managing realms and user accounts.</td>
+        </tr>
+        <tr>
+			<td>10</td>
+            <td>Configuration</td>
+            <td>Authentication and Authorization Concepts</td>
+            <td>2</td>
+            <td>Understanding authentication modules, trees, and policies.</td>
+        </tr>
+        <tr>
+			<td>11</td>
+            <td>Authentication</td>
+            <td>Authentication Modules in ForgeRock AM</td>
+            <td>2</td>
+            <td>Exploring different authentication mechanisms.</td>
+        </tr>
+        <tr>
+			<td>12</td>
+            <td>Authentication</td>
+            <td>Authentication Trees and Chains</td>
+            <td>2</td>
+            <td>Configuring adaptive authentication flows.</td>
+        </tr>
+        <tr>
+			<td>13</td>
+            <td>Authentication</td>
+            <td>Single Sign-On (SSO) with ForgeRock</td>
+            <td>2</td>
+            <td>Implementing SSO using AM.</td>
+        </tr>
+        <tr>
+			<td>14</td>
+            <td>Federation</td>
+            <td>Federated Identity and SAML Integration</td>
+            <td>2</td>
+            <td>Understanding federation and configuring SAML.</td>
+        </tr>
+        <tr>
+			<td>15</td>
+            <td>OAuth 2.0</td>
+            <td>OAuth 2.0 and OpenID Connect (OIDC)</td>
+            <td>2</td>
+            <td>Introduction to OAuth 2.0 and OIDC for modern authentication.</td>
+        </tr>
+        <tr>
+			<td>16</td>
+            <td>Administration</td>
+            <td>User Management and Self-Service Features</td>
+            <td>2</td>
+            <td>Managing users, groups, and self-service registration.</td>
+        </tr>
+        <tr>
+			<td>17</td>
+            <td>Administration</td>
+            <td>Session Management and Security</td>
+            <td>2</td>
+            <td>Understanding session persistence and timeout policies.</td>
+        </tr>
+        <tr>
+			<td>18</td>
+            <td>Administration</td>
+            <td>Logging, Monitoring, and Troubleshooting</td>
+            <td>2</td>
+            <td>Monitoring AM logs and resolving common issues.</td>
+        </tr>
+        <tr>
+			<td>19</td>
+            <td>Customization</td>
+            <td>Customizing UI and User Experience</td>
+            <td>2</td>
+            <td>Modifying UI elements in ForgeRock AM.</td>
+        </tr>
+        <tr>
+			<td>20</td>
+            <td>Deployment</td>
+            <td>Deploying ForgeRock in Cloud Environments</td>
+            <td>2</td>
+            <td>Basics of cloud deployment strategies.</td>
         </tr>
         
       </tbody>
@@ -182,7 +323,7 @@
 
 		<div class="pricing-table">
 			<h3 class="pricing-title">Basic</h3>
-			<div class="price">$300<sup>/4 months</sup></div>
+			<div class="price">$200<sup>/4 months</sup></div>
 			<!-- List / Properties -->
 			<ul class="table-list">
 				<li>4 months <span> watch online all videos</span></li>
@@ -191,14 +332,14 @@
 			</ul>
 			<!-- Contratar / Comprar -->
 			<div class="table-buy">
-				<p>$300<sup>/4 months</sup></p>
+				<p>$120<sup>/4 months</sup></p>
 				<a href="#" class="pricing-action">Buy</a>
 			</div>
 		</div>
 		
 		<div class="pricing-table recommended">
 			<h3 class="pricing-title">Premium</h3>
-			<div class="price">$580<sup>/12 months</sup></div>
+			<div class="price">$480<sup>/12 months</sup></div>
 			<!-- List / Properties -->
 			<ul class="table-list">
 				<li>12 months <span> watch online all videos</span></li>
@@ -207,14 +348,14 @@
 			</ul>
 			<!-- Contratar / Comprar -->
 			<div class="table-buy">
-				<p>$580<sup>/12 months</sup></p>
+				<p>$480<sup>/12 months</sup></p>
 				<a href="#" class="pricing-action">Buy</a>
 			</div>
 		</div>
 
 		<div class="pricing-table">
 			<h3 class="pricing-title">Ultimate</h3>
-			<div class="price">$880<sup>Lifetime</sup></div>
+			<div class="price">$780<sup>Lifetime</sup></div>
 			<!-- List / Properties -->
 			<ul class="table-list">
 				<li>Lifetime <span> watch online all videos</span></li>
@@ -223,7 +364,7 @@
 			</ul>
 			<!-- Contratar / Comprar -->
 			<div class="table-buy">
-				<p>$880<sup>for Lifetime</sup></p>
+				<p>$780<sup>for Lifetime</sup></p>
 				<a href="#" class="pricing-action">Buy</a>
 			</div>
 		</div>
