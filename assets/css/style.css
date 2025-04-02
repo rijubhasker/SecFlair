@@ -1811,8 +1811,6 @@ tr:hover {
   }
 
   td {
-    display: block;
-    text-align: right;
     border: none;
     border-bottom: 1px solid #ddd;
   }
